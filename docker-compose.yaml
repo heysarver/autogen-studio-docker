@@ -1,0 +1,9 @@
+services:
+  autogen-studio:
+    image: heysarver/autogen-studio
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      - ./data:/app/.autogenstudio
+    ports:
+      - 8081:8081
